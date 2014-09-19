@@ -6,7 +6,8 @@
 <div ng-controller="Feature1Ctrl">
     <ul>
         <li ng-repeat="customer in customers">
-            {{customer.name}}
+            <span>{{customer.name}}</span>
+			<span>{{customer.age | ageFilter}}</span>
         </li>
     </ul>
 </div>
