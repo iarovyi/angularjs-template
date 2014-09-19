@@ -1,5 +1,5 @@
 'use strict';
 
-app.controller('Feature2Ctrl', [function($scope, customersSvc) {
+app.controller('Feature2Ctrl', function($scope, customersSvc) {
 
-}]);
+});

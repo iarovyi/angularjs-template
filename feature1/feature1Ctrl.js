@@ -1,6 +1,6 @@
 'use strict';
 
 
-app.controller('Feature1Ctrl', [function($scope, customersSvc) {
+app.controller('Feature1Ctrl', function($scope, customersSvc) {
 	$scope.customers = customersSvc.customers;
-}]);
+});
