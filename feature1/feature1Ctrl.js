@@ -2,5 +2,5 @@
 
 
 app.controller('Feature1Ctrl', function($scope, customersSvc) {
-	$scope.customers = customersSvc.customers;
+	$scope.customers = customersSvc.getAllCustomers();
 });

@@ -5,6 +5,12 @@ app.factory('customersSvc', function () {
     	getCustomerById: function(id){
     		return this.customers[id];
     	},
+        getAllCustomers: function(){
+            return [
+                { "id": 1, "name": "Ted", age: 15 },
+                { "id": 2, "name": "Jack", age: 80 }
+            ];
+        },
     	customers: [
     		{ "id": 1, "name": "Ted", age: 15 },
     		{ "id": 2, "name": "Jack", age: 80 }

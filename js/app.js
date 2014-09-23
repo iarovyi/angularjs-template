@@ -2,8 +2,9 @@
 
 
 var app = angular.module('myApp', [ 'ngRoute'/*,'myApp.view1', 'myApp.view2', 'myApp.version'*/]).
-config(['$routeProvider', function($routeProvider) {
+config(['$routeProvider', function($routeProvider, $locationProvider) {
  $routeProvider.otherwise({redirectTo: '/'});
+ //$locationProvider.html5Mode(true);
 
 
  $routeProvider
